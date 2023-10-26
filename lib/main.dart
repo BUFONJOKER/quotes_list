@@ -16,7 +16,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 
   var quoteList = [
-    "Believeyou can and you're halfway there. -Theodore Roosevelt",
+    "Believe you can and you're halfway there. -Theodore Roosevelt",
     "The only way to do great work is to love what you do. -Steve Jobs",
     "The future depends on what you do today. -Mahatma Gandhi",
     "Don't watch the clock; do what it does. Keep going. -Sam Levinson",
