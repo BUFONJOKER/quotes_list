@@ -15,21 +15,24 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   List<Quote> quoteList = [
-    Quote(text: 'Be yourself; everyone else is already taken', author: 'Oscar Wilde'),
-    Quote(text: 'I have nothing to declare except my genius', author: 'Oscar Wilde'),
-    Quote(text: 'The truth is rarely pure and never simple', author: 'Oscar Wilde'),
+    Quote(
+        text: 'Be yourself; everyone else is already taken',
+        author: 'Oscar Wilde'),
+    Quote(
+        text: 'I have nothing to declare except my genius',
+        author: 'Oscar Wilde'),
+    Quote(
+        text: 'The truth is rarely pure and never simple',
+        author: 'Oscar Wilde'),
   ];
 
-
-  Widget quoteTemplate(quote){
-    return  Card(
+  Widget quoteTemplate(quote) {
+    return Card(
       margin: const EdgeInsets.all(20.0),
       child: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Column(
-
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Text(
@@ -46,12 +49,10 @@ class _HomeState extends State<Home> {
                 color: Colors.grey[600],
               ),
             ),
-
           ],
         ),
       ),
-      );
-
+    );
   }
 
   @override
@@ -59,13 +60,12 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.blueGrey[100],
       appBar: AppBar(
-          backgroundColor: Colors.blueGrey[600],
-          title: const Text('Awesome Quotes'),
-          centerTitle: true,
+        backgroundColor: Colors.blueGrey[600],
+        title: const Text('Awesome Quotes'),
+        centerTitle: true,
       ),
       body: Column(
         children: quoteList.map((quote) => quoteTemplate(quote)).toList(),
-
       ),
     );
   }
