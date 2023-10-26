@@ -1,44 +1,85 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# Flutter/Dart specific
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
-.pub-cache/
 .pub/
+build/
+
+.idea/
+.vscode/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/ephemeral
+**/ios/Flutter/gen_snapshot
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/ios.dart
+**/ios/Flutter/flutter_assets/*
+**/ios/Flutter/App.framework
+**/ios/Flutter/app.framework
+**/ios/Flutter/Flutter.framework
+
+# Android specific
 /build/
+/captures/
+/local.properties
+/.gradle/
 
-# Symbolication related
-app.*.symbols
+/gradle-wrapper.jar
+/gradlew
+/gradlew.bat
+/gradle-wrapper.properties
 
-# Obfuscation related
-app.*.map.json
+# Xcode specific
+**/ios/Pods/
+**/ios/Podfile.lock
+**/ios/Podfile
+**/ios/Flutter/ios/Pods/
+**/ios/Flutter/ios/Podfile.lock
+**/ios/Flutter/ios/Podfile
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+
+# macOS specific
+**/macos/Flutter/Flutter.framework
+**/macos/Flutter/flutter_export_environment.sh
+
+# Web specific
+**/web/main.dart.js
+**/web/main.dart.js.map
+**/web/main.dart.js.deps
+**/web/main.dart.js.deps_map
+**/web/main.dart.bootstrap.js
+
+**/web/main.ddc.js
+
+
+# Android Studio files
+/.idea/
+/*.iml
+/.flutter-plugins
+/.flutter-plugins-dependencies
+/.android/
+/.ios/
+/.metadata
+
+# Visual Studio Code files
+
+.history
+*.code-workspace
+
+# macOS
+.DS_Store
+
+# Flutter analysis and test files
+**/lib/main.dart.analysis
+**/test/widgets_test.dart
+
+# Windows
+
+*.iml
+
+# Miscellaneous
+.pub-cache/
+pubspec.lock
+flutter_module/.dart_tool/
+
