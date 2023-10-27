@@ -28,6 +28,11 @@ class _HomeState extends State<Home> {
         author: 'Oscar Wilde'),
   ];
 
+  void deleteQuote(quote) {
+    setState(() {
+      quoteList.remove(quote);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -35,11 +40,16 @@ class _HomeState extends State<Home> {
       backgroundColor: Colors.blueGrey[100],
       appBar: AppBar(
         backgroundColor: Colors.blueGrey[600],
-        title: const Text('Awesome Quotes'),
+        title: const Text('Awesome   Quotes'),
         centerTitle: true,
       ),
       body: Column(
-        children: quoteList.map((quote) => QuoteCard(quote: quote)).toList(),
+        children: quoteList
+            .map((quote) => QuoteCard(
+                  quote: quote,
+                  delete: () => deleteQuote(quote),
+                ))
+            .toList(),
       ),
     );
   }
